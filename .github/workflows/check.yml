@@ -1,0 +1,25 @@
+name: Check submitted blocks
+on:
+  pull_request:
+    paths: ["submissions/**"]
+permissions:
+  contents: read
+  pull-requests: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install pypdf
+      - name: Check the changed blocks
+        id: check
+        run: |
+          FILES=$(git diff --name-only --diff-filter=AM origin/${{ github.base_ref }}...HEAD -- 'submissions/*.json')
+          python3 tools/check_blocks.py $FILES
+      - name: Post the review report
+        if: always()
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: gh pr comment ${{ github.event.pull_request.number }} --body-file report.md

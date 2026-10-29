@@ -1,0 +1,742 @@
+{
+"signals": {
+"Ethernet": [
+"#40d6ff",
+"NET",
+"network"
+],
+"PoE": [
+"#38c3ea",
+"POE",
+"network"
+],
+"Dante / AES67": [
+"#2fb7ff",
+"DAN",
+"network"
+],
+"AVB / Milan": [
+"#3aa6ff",
+"AVB",
+"network"
+],
+"NDI": [
+"#5fd0ff",
+"NDI",
+"network"
+],
+"SMPTE ST 2110": [
+"#4ab8e0",
+"IP",
+"network"
+],
+"SDVoE": [
+"#6a9cff",
+"SDV",
+"network"
+],
+"Art-Net / sACN": [
+"#ff8095",
+"ANS",
+"network"
+],
+"Q-LAN": [
+"#33c4f0",
+"QLN",
+"network"
+],
+"CobraNet": [
+"#2aa0d0",
+"CBN",
+"network"
+],
+"Fibre": [
+"#7fe3ff",
+"FIB",
+"network"
+],
+"Fibre single-mode": [
+"#7fe3ff",
+"FIB",
+"network"
+],
+"Fibre multi-mode": [
+"#9fe9ff",
+"FIB",
+"network"
+],
+"HDBaseT": [
+"#5aa9ff",
+"HDB",
+"hdbaset"
+],
+"HDMI": [
+"#b07cff",
+"VID",
+"hdmi"
+],
+"DisplayPort": [
+"#c59bff",
+"DP",
+"dp"
+],
+"DVI": [
+"#a68bff",
+"DVI",
+"dvi"
+],
+"VGA": [
+"#9b8ad8",
+"VGA",
+"vga"
+],
+"SDI": [
+"#9a6bff",
+"SDI",
+"sdi"
+],
+"12G-SDI": [
+"#8a5bff",
+"SDI",
+"sdi"
+],
+"Composite video": [
+"#d0a0ff",
+"CVB",
+"composite"
+],
+"Component video": [
+"#c090ff",
+"CMP",
+"component"
+],
+"Genlock / tri-level sync": [
+"#e5c0ff",
+"REF",
+"reference"
+],
+"USB": [
+"#9fb3c8",
+"USB",
+"usb"
+],
+"Thunderbolt": [
+"#8fa3b8",
+"TB",
+"thunderbolt"
+],
+"Analog audio": [
+"#ffb03b",
+"AUD",
+"analog"
+],
+"Mic level": [
+"#ffa53b",
+"MIC",
+"analog"
+],
+"AES3": [
+"#ff8a3b",
+"AES",
+"aes"
+],
+"S/PDIF": [
+"#ff9f6b",
+"SPD",
+"spdif"
+],
+"ADAT": [
+"#ff7f5b",
+"ADT",
+"adat"
+],
+"MADI": [
+"#ff6b3b",
+"MAD",
+"madi"
+],
+"Speaker": [
+"#e0a060",
+"SPK",
+"speaker"
+],
+"70 / 100 V line": [
+"#d09050",
+"100V",
+"line100"
+],
+"Headphone": [
+"#f0b080",
+"HP",
+"headphone"
+],
+"Intercom 2-wire": [
+"#e6a8d7",
+"ICM",
+"intercom2"
+],
+"Intercom 4-wire": [
+"#d698c7",
+"IC4",
+"intercom4"
+],
+"Hearing loop": [
+"#c7a0e6",
+"LOOP",
+"loop"
+],
+"RF / antenna": [
+"#c8c8c8",
+"RF",
+"rf"
+],
+"DMX": [
+"#ff6b78",
+"DMX",
+"dmx"
+],
+"RS-232": [
+"#7ee081",
+"SER",
+"rs232"
+],
+"RS-422": [
+"#6ed071",
+"422",
+"rs422"
+],
+"RS-485": [
+"#5cc96a",
+"485",
+"rs485"
+],
+"GPIO": [
+"#c8e06b",
+"GPI",
+"gpio"
+],
+"Relay / contact closure": [
+"#b8d05b",
+"REL",
+"gpio"
+],
+"Tally": [
+"#d8e07b",
+"TAL",
+"gpio"
+],
+"IR": [
+"#a8c05b",
+"IR",
+"ir"
+],
+"Telephone (POTS)": [
+"#b0b8c8",
+"TEL",
+"pots"
+],
+"Proprietary link": [
+"#b0a0c0",
+"PRP",
+"proprietary"
+],
+"Timecode": [
+"#ffd84d",
+"TC",
+"timecode"
+],
+"MIDI": [
+"#e6c84d",
+"MID",
+"midi"
+],
+"Word clock": [
+"#d9b84d",
+"WCK",
+"wordclock"
+],
+"Power": [
+"#ff4d4d",
+"PWR",
+"power"
+],
+"3-phase power": [
+"#e03a3a",
+"3PH",
+"power3"
+],
+"DC power": [
+"#ff7a7a",
+"DC",
+"dc"
+]
+},
+"connectors": {
+"RJ45": "rj45",
+"RJ45 shielded": "rj45",
+"etherCON": "rj45",
+"RJ45 (DMX)": "rj45",
+"RJ45 (serial)": "rj45",
+"SFP": "sfp",
+"SFP+": "sfp",
+"SFP28": "sfp",
+"RJ11": "rj11",
+"powerCON 32A": "pc32",
+"QSFP28": "qsfp",
+"M12 X-coded": "m12",
+"LC": "lc",
+"SC": "sc",
+"ST": "st",
+"MPO": "mpo",
+"opticalCON DUO": "ocduo",
+"opticalCON QUAD": "ocquad",
+"HDMI": "hdmi",
+"HDMI locking": "hdmi",
+"Mini HDMI": "minihdmi",
+"Micro HDMI": "microhdmi",
+"DisplayPort": "dp",
+"Mini DisplayPort": "minidp",
+"DVI-D": "dvi",
+"DVI-I": "dvi",
+"DE-15 (VGA)": "vga",
+"5x BNC": "bnc5",
+"BNC": "bnc",
+"HD-BNC": "hdbnc",
+"DIN 1.0/2.3": "din123",
+"RCA": "rca",
+"USB-A": "usb",
+"USB-B": "usb",
+"USB-C": "usb",
+"Micro USB": "usb",
+"Mini USB": "usb",
+"Thunderbolt 2": "tb2",
+"XLR3": "xlr3",
+"XLR3 (M)": "xlr3",
+"XLR3 (F)": "xlr3",
+"XLR4": "xlr4",
+"XLR5": "xlr5",
+"XLR7": "xlr7",
+"TRS 6.35 mm": "jack635",
+"TS 6.35 mm": "jack635",
+"TRS 3.5 mm": "jack35",
+"TRS 3.5 mm (MIDI)": "jack35",
+"DB25 (Tascam)": "db25t",
+"DB25 (Yamaha)": "db25y",
+"DB25": "db25",
+"DB15": "db15",
+"DB9": "db9",
+"Toslink": "toslink",
+"DIN5": "din5",
+"Phoenix": "bare",
+"Terminal block": "bare",
+"speakON": "speakon",
+"speakON NL2": "speakon",
+"speakON NL4": "speakon",
+"speakON NL8": "nl8",
+"Banana": "banana",
+"Binding post": "banana",
+"N-type": "ntype",
+"SMA": "sma",
+"TNC": "tnc",
+"F-type": "ftype",
+"IEC C13": "ac",
+"IEC C14": "ac",
+"IEC C15": "ac",
+"IEC C19": "ac",
+"IEC C20": "ac",
+"IEC C7": "ac",
+"IEC C5": "ac",
+"powerCON": "ac",
+"powerCON TRUE1": "ac",
+"Schuko": "ac",
+"UK BS 1363": "ac",
+"NEMA 5-15": "ac",
+"NEMA 5-20": "ac",
+"NEMA L5-20": "l520",
+"CEE 32A 3-pin": "cee32_3",
+"Camlock": "camlock",
+"NEMA L21-30": "l2130",
+"FC": "fc",
+"SC/APC": "scapc",
+"SMPTE 311 hybrid fibre": "smpte311",
+"Mini XLR (TA3)": "ta3",
+"Mini XLR (TA4)": "ta4",
+"XLR6": "xlr6",
+"LEMO": "lemo",
+"DB37": "db37",
+"Multipin DT12": "dt12",
+"EDAC": "edac",
+"CEE 16A": "cee16",
+"CEE 16A 5-pin": "cee16_5",
+"CEE 32A 5-pin": "cee32",
+"CEE 63A 5-pin": "cee63",
+"CEE 125A 5-pin": "cee125",
+"Socapex 19-pin": "soca",
+"Harting 16-pin": "harting",
+"Powerlock": "powerlock",
+"DC barrel 2.1 mm": "dc21",
+"DC barrel 2.5 mm": "dc25",
+"Anderson Powerpole": "anderson"
+},
+"signal_connectors": {
+"Ethernet": [
+"RJ45",
+"RJ45 shielded",
+"etherCON",
+"SFP",
+"SFP+",
+"SFP28",
+"QSFP28",
+"M12 X-coded"
+],
+"PoE": [
+"RJ45",
+"RJ45 shielded",
+"etherCON"
+],
+"Dante / AES67": [
+"RJ45",
+"RJ45 shielded",
+"etherCON",
+"SFP"
+],
+"AVB / Milan": [
+"RJ45",
+"etherCON"
+],
+"NDI": [
+"RJ45",
+"RJ45 shielded"
+],
+"SMPTE ST 2110": [
+"RJ45",
+"SFP",
+"SFP+",
+"QSFP28"
+],
+"SDVoE": [
+"RJ45",
+"SFP+"
+],
+"Art-Net / sACN": [
+"RJ45",
+"etherCON"
+],
+"Q-LAN": [
+"RJ45",
+"RJ45 shielded",
+"SFP"
+],
+"CobraNet": [
+"RJ45",
+"etherCON"
+],
+"Fibre": [
+"LC",
+"SC",
+"ST",
+"MPO",
+"opticalCON DUO",
+"opticalCON QUAD",
+"SFP",
+"SFP+",
+"FC",
+"SC/APC",
+"SFP28",
+"QSFP28"
+],
+"Fibre single-mode": [
+"LC",
+"SC",
+"ST",
+"MPO",
+"opticalCON DUO",
+"opticalCON QUAD",
+"SFP",
+"SFP+",
+"FC",
+"SC/APC",
+"SFP28",
+"QSFP28"
+],
+"Fibre multi-mode": [
+"LC",
+"SC",
+"ST",
+"MPO",
+"opticalCON DUO",
+"opticalCON QUAD",
+"SFP",
+"SFP+",
+"FC",
+"SC/APC",
+"SFP28",
+"QSFP28"
+],
+"HDBaseT": [
+"RJ45",
+"RJ45 shielded",
+"etherCON"
+],
+"HDMI": [
+"HDMI",
+"HDMI locking",
+"Mini HDMI",
+"Micro HDMI"
+],
+"DisplayPort": [
+"DisplayPort",
+"Mini DisplayPort",
+"USB-C"
+],
+"DVI": [
+"DVI-D",
+"DVI-I"
+],
+"VGA": [
+"DE-15 (VGA)",
+"5x BNC"
+],
+"SDI": [
+"BNC",
+"HD-BNC",
+"DIN 1.0/2.3",
+"SMPTE 311 hybrid fibre"
+],
+"12G-SDI": [
+"BNC",
+"HD-BNC",
+"DIN 1.0/2.3",
+"SMPTE 311 hybrid fibre"
+],
+"Composite video": [
+"RCA",
+"BNC"
+],
+"Component video": [
+"RCA",
+"BNC"
+],
+"Genlock / tri-level sync": [
+"BNC"
+],
+"USB": [
+"USB-A",
+"USB-B",
+"USB-C",
+"Micro USB",
+"Mini USB"
+],
+"Thunderbolt": [
+"USB-C",
+"Thunderbolt 2"
+],
+"Analog audio": [
+"XLR3 (M)",
+"XLR3 (F)",
+"XLR3",
+"TRS 6.35 mm",
+"TRS 3.5 mm",
+"TS 6.35 mm",
+"RCA",
+"Phoenix",
+"DB25 (Tascam)",
+"Multipin DT12",
+"EDAC",
+"Mini XLR (TA3)"
+],
+"Mic level": [
+"XLR3 (M)",
+"XLR3 (F)",
+"XLR3",
+"TRS 6.35 mm",
+"Phoenix",
+"Mini XLR (TA3)",
+"Mini XLR (TA4)",
+"TRS 3.5 mm"
+],
+"AES3": [
+"XLR3 (M)",
+"XLR3 (F)",
+"XLR3",
+"BNC",
+"DB25 (Tascam)",
+"DB25 (Yamaha)",
+"Phoenix"
+],
+"S/PDIF": [
+"RCA",
+"Toslink"
+],
+"ADAT": [
+"Toslink"
+],
+"MADI": [
+"BNC",
+"SC",
+"LC",
+"opticalCON DUO"
+],
+"Speaker": [
+"speakON NL2",
+"speakON NL4",
+"speakON NL8",
+"speakON",
+"Phoenix",
+"Binding post",
+"Banana",
+"Terminal block"
+],
+"70 / 100 V line": [
+"Phoenix",
+"Terminal block"
+],
+"Headphone": [
+"TRS 6.35 mm",
+"TRS 3.5 mm"
+],
+"Intercom 2-wire": [
+"XLR3 (M)",
+"XLR3 (F)",
+"XLR3"
+],
+"Intercom 4-wire": [
+"XLR4",
+"XLR6",
+"RJ45"
+],
+"Hearing loop": [
+"Phoenix",
+"Terminal block"
+],
+"RF / antenna": [
+"BNC",
+"N-type",
+"SMA",
+"TNC",
+"F-type"
+],
+"DMX": [
+"XLR5",
+"XLR3",
+"RJ45 (DMX)",
+"Phoenix"
+],
+"RS-232": [
+"DB9",
+"DB25",
+"Phoenix",
+"RJ45 (serial)",
+"TRS 3.5 mm"
+],
+"RS-422": [
+"DB9",
+"Phoenix",
+"RJ45 (serial)"
+],
+"RS-485": [
+"Phoenix",
+"DB9",
+"RJ45 (serial)",
+"XLR3"
+],
+"GPIO": [
+"Phoenix",
+"DB25",
+"DB15",
+"DB37",
+"DB9",
+"Terminal block"
+],
+"Relay / contact closure": [
+"Phoenix",
+"Terminal block",
+"DB25",
+"DB37"
+],
+"Tally": [
+"Phoenix",
+"DB15",
+"DB25"
+],
+"IR": [
+"TRS 3.5 mm",
+"Phoenix"
+],
+"Telephone (POTS)": [
+"RJ11",
+"Phoenix"
+],
+"Proprietary link": [
+"etherCON",
+"RJ45",
+"opticalCON DUO",
+"BNC",
+"Phoenix",
+"Terminal block"
+],
+"Timecode": [
+"XLR3 (M)",
+"XLR3 (F)",
+"XLR3",
+"BNC",
+"TRS 6.35 mm",
+"RCA",
+"LEMO"
+],
+"MIDI": [
+"DIN5",
+"USB-B",
+"TRS 3.5 mm (MIDI)"
+],
+"Word clock": [
+"BNC"
+],
+"Power": [
+"IEC C13",
+"IEC C14",
+"IEC C19",
+"IEC C20",
+"IEC C7",
+"powerCON",
+"powerCON TRUE1",
+"Schuko",
+"UK BS 1363",
+"NEMA 5-15",
+"NEMA 5-20",
+"NEMA L5-20",
+"IEC C5",
+"IEC C15",
+"powerCON 32A",
+"CEE 16A",
+"CEE 32A 3-pin",
+"CEE 32A 5-pin",
+"CEE 63A 5-pin",
+"CEE 125A 5-pin",
+"Socapex 19-pin",
+"Harting 16-pin",
+"Powerlock",
+"Phoenix",
+"Terminal block"
+],
+"3-phase power": [
+"CEE 16A 5-pin",
+"CEE 32A 5-pin",
+"CEE 63A 5-pin",
+"CEE 125A 5-pin",
+"Powerlock",
+"Camlock",
+"NEMA L21-30"
+],
+"DC power": [
+"DC barrel 2.1 mm",
+"DC barrel 2.5 mm",
+"XLR4",
+"Phoenix",
+"Terminal block",
+"Anderson Powerpole",
+"LEMO",
+"USB-C"
+]
+}
+}
