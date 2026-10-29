@@ -39,9 +39,9 @@ import time
 import urllib.request
 
 # Where the shared library lives. Set these when the repository and Worker are set up (see repository/README.md).
-SUBMIT_URL = ""                          # e.g. https://blocks.illumin8studios.workers.dev/submit
-LIBRARY_URL = ""                         # e.g. https://illumin8studios.github.io/show-tools-blocks/
-LIBRARY_PUBLIC_KEY = ""                  # hex Ed25519 public key from --new-keys (public; safe to ship)
+SUBMIT_URL = "https://illumin8-show-tools.steve-af6.workers.dev/submit"  # e.g. https://blocks.illumin8studios.workers.dev/submit
+LIBRARY_URL = "https://illumin8studios.github.io/show-tools-blocks/"  # e.g. https://illumin8studios.github.io/show-tools-blocks/
+LIBRARY_PUBLIC_KEY = "55fe46246ffae545a0d880c5fbc08353cd2a0a708c852d6ede5d848a43b2ee39"  # hex Ed25519 public key from --new-keys (public; safe to ship)
 CATEGORIES = ("Audio", "Video", "Lighting", "Network", "Power", "Show control", "Comms", "Media", "Patch panels", "Generic",
               "Control", "Imported")
 STATES = {"shared": "\U0001f465 Shared library: checked by a reviewer - check against the spec sheet before relying on it",
@@ -430,7 +430,9 @@ def selftest():
     keep, tmp = _data_dir, tempfile.mkdtemp()
     _data_dir = lambda: tmp                                   # noqa: E731
     try:
-        ok_, msg = submit(good, "Test", library=lib)
+        with open(os.path.join(tmp, "share_settings.json"), "w") as fh:   # never the live service: nothing listens on port 9
+            json.dump(dict(submit_url="http://127.0.0.1:9/submit"), fh)
+        ok_, msg = submit(good, "Test", library=lib, timeout=2)
         check(f"Not set up / offline: kept in the outbox to send later ({msg.splitlines()[0][:60]}...)",
               ok_ and len(os.listdir(os.path.join(tmp, "share_outbox"))) == 1)
         lp, mp = cache_paths()
