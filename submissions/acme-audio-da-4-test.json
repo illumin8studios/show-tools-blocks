@@ -1,0 +1,44 @@
+{
+ "kind": "block",
+ "id": "acme-audio-da-4-test",
+ "block": {
+  "name": "TEST - Dante amplifier",
+  "maker": "Acme Audio",
+  "model": "DA-4 TEST",
+  "category": "Audio/Amplifiers",
+  "prefix": "AMP",
+  "sockets": [
+   {
+    "name": "Dante primary",
+    "dir": "io",
+    "signal": "Dante / AES67",
+    "connector": "etherCON"
+   },
+   {
+    "name": "Dante secondary",
+    "dir": "io",
+    "signal": "Dante / AES67",
+    "connector": "etherCON"
+   },
+   {
+    "name": "Out 1",
+    "dir": "out",
+    "signal": "Speaker",
+    "connector": "speakON NL4"
+   },
+   {
+    "name": "Mains",
+    "dir": "in",
+    "signal": "Power",
+    "connector": "powerCON TRUE1"
+   }
+  ],
+  "source": "https://www.acmeaudio.com/da-4/spec.pdf"
+ },
+ "submitter": "Claude setup test",
+ "notes": "End-to-end test of the submission service - close without merging.",
+ "spec_text": "",
+ "app_version": "1.53.0",
+ "sent": "2026-10-29T05:43:36Z",
+ "status": "shared"
+}
